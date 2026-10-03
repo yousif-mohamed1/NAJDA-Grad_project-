@@ -1,42 +1,43 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-*.egg-info/
-dist/
-build/
+# -------------------------
+# OS
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# IDE
-.idea/
+# -------------------------
+# Editors
+# -------------------------
 .vscode/
+.idea/
+
+# Vim
 *.swp
 *.swo
 
-# Environment
+# -------------------------
+# Environment / Secrets
+# -------------------------
 .env
-.env.local
+.env.*
+!.env.example
+secrets/
 
-# Data (too large for git)
-data/raw/
-data/models/
-*.h5
-*.pt
-*.pth
-*.onnx
-*.pkl
+# -------------------------
+# Logs
+# -------------------------
+*.log
 
-# Jupyter
-.ipynb_checkpoints/
+# -------------------------
+# Temporary files
+# -------------------------
+*.tmp
+*.bak
 
-# OS
-.DS_Store
-Thumbs.db
-
-# MLflow / experiment tracking
-mlruns/
-wandb/
+# -------------------------
+# Archives
+# -------------------------
+*.zip
+*.tar
+*.gz
+*.rar
